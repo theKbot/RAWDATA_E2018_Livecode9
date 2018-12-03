@@ -4,7 +4,7 @@ require.config({
     paths: {
         knockout: 'lib/knockout/dist/knockout',
         jquery: 'lib/jQuery/dist/jquery.min',
-        text: 'lib/requirejs-text/text',
+        text: 'lib/text/text',
         jqcloud: 'lib/jqcloud2/dist/jqcloud'
     },
     shim: {
