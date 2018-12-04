@@ -13,6 +13,16 @@ require.config({
     }
 });
 
+// register components
+require(['knockout'], function (ko) {
+    ko.components.register("person-list",
+        {
+            viewModel: { require: 'components/personList/personList'},
+            template: { require: 'text!components/personList/personListView.html'}
+        });
+
+});
+
 
 // start application
 require(['knockout', 'app', 'jqcloud'], function(ko, app) {
